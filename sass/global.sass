@@ -1,0 +1,49 @@
+@font-face
+    font-family: Rugen
+    src: url("../assets/fonts/RugenExpanded.otf")
+    
+:root
+    --color-background: #000    
+    --color-text: #ebebeb
+
+body 
+    margin: 0
+    background-color: var(--color-background)
+    color: var(--color-text)
+    font-family: Ubuntu
+
+nav 
+    width: 98vw
+    height: 10vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    img
+        padding: 0 1vw
+        height: 4vh
+
+    div 
+        padding: 0 1vw        
+        a
+            color: var(--color-text)
+            padding: 5px 10px
+            font-size: 1.6rem
+            text-decoration: none
+
+            &:hover
+                background-color: var(--color-text)
+                color: var(--color-background) 
+
+section
+    width: 100vw
+    height: 90vh
+
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    h1
+        margin: 0
+        font-size: 12rem

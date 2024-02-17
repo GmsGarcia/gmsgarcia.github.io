@@ -1,0 +1,14 @@
+{
+  "name": "web-gmsgarcia",
+  "version": "1.0.0",
+  "description": "My own website :)",
+  "scripts": {
+    "dev": "sass --watch sass:css"
+  },
+  "author": "GmsGarcia",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.3",
+    "sass": "^1.71.0"
+  }
+}
