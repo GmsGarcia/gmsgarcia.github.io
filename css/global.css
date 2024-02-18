@@ -11,10 +11,11 @@ body {
   margin: 0;
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: Rugen
+  font-family: Rugen;
 }
 
 nav {
+  position: absolute;
   width: 98vw;
   height: 10vh;
   display: flex;
@@ -25,6 +26,13 @@ nav img {
   padding: 0 1vw;
   height: 4vh;
 }
+nav .logo {
+  background-color: var(--color-text);
+  color: var(--color-background);
+  margin: 1vh 1vw;
+  padding: 0.3vh 0.7vw;
+  font-size: 1.6rem;
+}
 nav div {
   padding: 0 1vw;
 }
@@ -34,22 +42,37 @@ nav div a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-nav div a:hover {
+nav div a:hover, nav div a:focus {
+  outline: none;
   background-color: var(--color-text);
   color: var(--color-background);
 }
 
 section {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-section h1 {
+section div {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+section div:nth-child(1) {
+  justify-content: start;
+}
+section div:nth-child(2) {
+  justify-content: center;
+}
+section div:nth-child(3) {
+  justify-content: end;
+}
+section div h1 {
   margin: 0;
-  font-size: 12rem;
+  font-size: 10vh;
 }
 
 /*# sourceMappingURL=global.css.map */

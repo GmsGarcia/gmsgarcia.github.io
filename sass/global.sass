@@ -10,9 +10,10 @@ body
     margin: 0
     background-color: var(--color-background)
     color: var(--color-text)
-    font-family: Ubuntu
+    font-family: Rugen
 
 nav 
+    position: absolute
     width: 98vw
     height: 10vh
     display: flex
@@ -22,28 +23,49 @@ nav
     img
         padding: 0 1vw
         height: 4vh
-
+    
+    .logo
+        background-color: var(--color-text)
+        color: var(--color-background)
+        margin: 1vh 1vw
+        padding: .3vh .7vw
+        font-size: 1.6rem
+        
     div 
-        padding: 0 1vw        
+        padding: 0 1vw
+         
         a
             color: var(--color-text)
             padding: 5px 10px
             font-size: 1.6rem
             text-decoration: none
 
-            &:hover
+            &:hover, &:focus
+                outline: none
                 background-color: var(--color-text)
                 color: var(--color-background) 
 
 section
     width: 100vw
-    height: 90vh
+    height: 100vh
 
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
 
-    h1
-        margin: 0
-        font-size: 12rem
+    div
+        width: 50vw
+        display: flex
+        align-items: center
+
+        &:nth-child(1)
+            justify-content: start
+        &:nth-child(2)
+            justify-content: center
+        &:nth-child(3)
+            justify-content: end
+             
+        h1
+            margin: 0
+            font-size: 10vh
